@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio ETUDIANT- Développeur Full Stack passionné par la création d'expériences numériques exceptionnelles">
+    <meta name="keywords" content="développeur, full stack, javascript, portfolio, web development">
+    <meta name="author" content="FATIMATH DIAKITE">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mon Portfolio - Développeur Full Stack">
+    <meta property="og:description" content="Découvrez mon parcours et mes compétences en développement web">
+    <meta property="og:type" content="website">
+    
+    <title>Mon Portfolio -</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="PROJET3.CSS">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">TIMA'S PORTFOLIO</div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#accueil" class="nav-link active" data-section="accueil">
+                    <i class="fas fa-home"></i>
+                    <span>Accueil</span>
+                </a>
+                <a href="#apropos" class="nav-link" data-section="apropos">
+                    <i data-lucide="user"></i>
+                    <span>À propos</span>
+                </a>
+                <a href="#competences" class="nav-link" data-section="competences">
+                    <i data-lucide="briefcase"></i>
+                    <span>Compétences</span>
+                </a>
+                <a href="#experience" class="nav-link" data-section="experience">
+                    <i data-lucide="file-text"></i>
+                    <span>Expérience</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i data-lucide="mail"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <div class="avatar-placeholder"><img src="WhatsApp Image 2025-07-31 à 01.24.32_b5d6402f.jpg" class="img" ></div>
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text"> Diakité</span>
+            </h1>
+            <p class="hero-subtitle">Etudiante Ingénieur en Cybersécurité</p>
+            <p class="hero-description">
+                Passionné par la création d'expériences numériques exceptionnelles, 
+                je transforme vos idées en solutions technologiques innovantes.
+            </p>
+            <div class="hero-social">
+                <a  class="social-link" href="https://www.instagram.com/tima_dkt">
+                    <i data-lucide="instagram"></i>
+                </a>
+                <a href="https://github.com/DiakT1" class="social-link">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+            <button class="cta-button" onclick="scrollToSection('contact')">
+                Contactez-moi
+            </button>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('apropos')">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder"><img src="WhatsApp Image 2025-07-31 à 01.19.13_2f3e5be1.jpg" height="500"></div>
+                    <div class="decoration decoration-1"></div>
+                    <div class="decoration decoration-2"></div>
+                </div>
+                <div class="about-text">
+                    <h3>Bonjour ! Bienvenue dans mon  MONDE</h3>
+                    <p>
+                        Développeuse passionnée avec <strong>1 ans d'expérience</strong> dans la création 
+                        d'applications web modernes et performantes. J'aime transformer des idées complexes 
+                        en solutions simples et élégantes.
+                    </p>
+                    <p>
+                        Mon approche combine expertise technique et sens artistique pour créer des expériences 
+                        utilisateur exceptionnelles. Je suis constamment à la recherche de nouvelles technologies 
+                        et méthodes pour améliorer mes compétences.
+                    </p>
+                    <p>
+                        Quand je ne code pas, vous me trouverez probablement en train de lire sur les dernières 
+                        tendances tech, de me detendre dans un coin paisible , ou d'explorer de nouveaux concepts de design.
+                    </p>
+                    
+                    <div class="interests">
+                        <h4>Ce qui me passionne :</h4>
+                        <div class="interests-grid">
+                            <div class="interest-item">
+                                <i data-lucide="code" class="interest-icon blue"></i>
+                                <span>Développement</span>
+                            </div>
+                            <div class="interest-item">
+                                <i data-lucide="palette" class="interest-icon purple"></i>
+                                <span>Design</span>
+                            </div>
+                            <div class="interest-item">
+                                <i data-lucide="heart" class="interest-icon red"></i>
+                                <span>Innovation</span>
+                            </div>
+                            <div class="interest-item">
+                                <i data-lucide="coffee" class="interest-icon amber"></i>
+                                <span>loisir</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number blue">5+</div>
+                            <div class="stat-label">Projets</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number indigo">1+</div>
+                            <div class="stat-label">Année</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number purple">100%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes Compétences</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Un aperçu de mes compétences techniques et créatives, développées au fil de mes expériences 
+                    et projets variés.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon blue">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PowerPoint</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress blue" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>TypeScript</span>
+                                <span>20%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress blue" data-width="20"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JS</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress blue" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>BOOTSRAP</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress blue" data-width="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon green">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>LANGAGE C</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress green" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress green" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress green" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PASCAL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress green" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon purple">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <h3>Mobile</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React Native</span>
+                                <span>15%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress purple" data-width="15"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Flutter</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress purple" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>iOS/Android</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress purple" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PWA</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress purple" data-width="30"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon pink">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <h3>Design</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span> FRAMER Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress pink" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CANVA</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress pink" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Adobe Creative</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress pink" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Prototyping</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress pink" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon orange">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <h3>DevOps</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Docker</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress orange" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AWS</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress orange" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CI/CD</span>
+                                <span>5%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress orange" data-width="5"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Linux</span>
+                                <span>20%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress orange" data-width="20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon yellow">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3>Outils</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress yellow" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Webpack/Vite</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress yellow" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Jest/Testing</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress yellow" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Agile/Scrum</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress yellow" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mon Parcours</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Un parcours riche en expériences variées, toujours avec la passion du code et de l'innovation.
+                </p>
+            </div>
+            <div class="experience-content">
+                <div class="experience-timeline">
+                    <h3 class="timeline-title">
+                        <div class="timeline-icon">
+                            <i data-lucide="calendar"></i>
+                        </div>
+                        Expérience Professionnelle
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h4>INGENIEUR ETUDIANT</h4>
+                                    <span class="job-period">2025 - Présent</span>
+                                </div>
+                                <div class="job-company">
+                                    <span class="company-name">BEM TECH ABIDJAN</span>
+                                    <span class="job-location">
+                                        <i data-lucide="map-pin"></i>
+                                        ABIDJAN, COTE D'IVOIRE
+                                    </span>
+                                </div>
+                                <p class="job-description">
+                                    Lead technique sur des projets web complexes utilisant javascript, css et html. 
+                                    Adherante au club d'informatique.
+                                </p>
+                                <div class="job-achievements">
+                                    <h5>Réalisations clés :</h5>
+                                    <ul>
+                                        <li>Optimisation des performances : +40% de vitesse</li>
+                                        <li>idée de website pour 10+ utilisateurs</li>
+                                        <li>Mise en place de CI/CD automatisé</li>
+                                    </ul>
+                                </div>
+                                <div class="job-technologies">
+                                    <span class="tech-tag">javascript</span>
+                                    <span class="tech-tag">pascal</span>
+                                    <span class="tech-tag">SQL</span>
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CANVA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h4>Développeur Frontend</h4>
+                                    <span class="job-period">2024 - 2025</span>
+                                </div>
+                                <div class="job-company">
+                                    <span class="company-name">Digital Solutions</span>
+                                    <span class="job-location">
+                                        <i data-lucide="map-pin"></i>
+                                        ABIDJAN, COTE D'IVOIRE
+                                    </span>
+                                </div>
+                                <p class="job-description">
+                                    Développement d'interfaces utilisateur modernes et responsives pour des clients.
+                                </p>
+                                <div class="job-achievements">
+                                    <h5>Réalisations clés :</h5>
+                                    <ul>
+                                        <li>Création de une applications web</li>
+                                        <li>Formation de l'équipe aux nouvelles technologies</li>
+                                    </ul>
+                                </div>
+                                <div class="job-technologies">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">SASS</span>
+                                    <span class="tech-tag">C</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h4>Développeur Junior</h4>
+                                    <span class="job-period">2024 - 2025</span>
+                                </div>
+                                <div class="job-company">
+                                    <span class="company-name">CLUB D'INFORMATIQUE</span>
+                                    <span class="job-location">
+                                        <i data-lucide="map-pin"></i>
+                                        Remote
+                                    </span>
+                                </div>
+                                <p class="job-description">
+                                    Une participation active au sein du club d'informatique
+                                </p>
+                                <div class="job-achievements">
+                                    <h5>Réalisations clés :</h5>
+                                    <ul>
+                                        <li>Creation de projets</li>
+                                        <li>Apprentissage rapide des technologies modernes</li>
+                                        <li>Contribution active aux décisions techniques</li>
+                                    </ul>
+                                </div>
+                                <div class="job-technologies">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">PYTHON</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-sidebar">
+                    <div class="education">
+                        <h3 class="education-title">
+                            <div class="education-icon">
+                                <i data-lucide="external-link"></i>
+                            </div>
+                            Formation
+                        </h3>
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4>BAC C</h4>
+                                <span class="education-period">2023 - 2024</span>
+                            </div>
+                            <p class="education-school">LYCEE INTERNATIONAL DESCARTES</p>
+                            <p class="education-specialization">Spécialisation EN MATHS,PC,ELECTRONIQUE</p>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4>1ER ANNEE</h4>
+                                <span class="education-period">2024 - 2025</span>
+                            </div>
+                            <p class="education-school">BEM TECH ABIDJAN</p>
+                            <p class="education-specialization">Base solide en programmation et algorithmique</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-download">
+                        <h3>Télécharger mon CV</h3>
+                        <p>Obtenez une version complète de mon parcours professionnel et de mes compétences.</p>
+                        <button class="download-btn">
+                            <i data-lucide="download"></i>
+                            <span><a href="DIAKITE FATIMATH CV.pdf" download>Télécharger le CV (pdf) </a></span>
+
+                        </button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-moi</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Une idée de projet ? Une question ? N'hésitez pas à me contacter ! 
+                    Je serais ravi de discuter de vos besoins et de voir comment nous pouvons collaborer.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <h3>Envoyez-moi un message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" required placeholder="Votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Objet de votre message">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required rows="6" placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i data-lucide="send"></i>
+                            <span>Envoyer le message</span>
+                        </button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Mes coordonnées</h3>
+                    <div class="contact-items">
+                        <a href="mailto:votre.email@example.com" class="contact-item">
+                            <div class="contact-icon blue">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">fatimathdiakite@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+33123456789" class="contact-item">
+                            <div class="contact-icon green">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Téléphone</p>
+                                <p class="contact-value">+225 07 97 72 37 92</p>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon purple">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Localisation</p>
+                                <p class="contact-value">Abidjan, Cote d'ivoire</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h4>Disponibilité</h4>
+                        <div class="availability-status">
+                            <div class="status-indicator"></div>
+                            <span>Disponible pour de nouveaux projets</span>
+                        </div>
+                        <p>Je réponds généralement dans les 24h. Pour les projets urgents, n'hésitez pas à me contacter directement par téléphone.</p>
+                    </div>
+
+                    <div class="response-time">
+                        <h4>Temps de réponse</h4>
+                        <div class="response-item">
+                            <span>Email</span>
+                            <span>&lt; 24h</span>
+                        </div>
+                        <div class="response-item">
+                            <span>Téléphone</span>
+                            <span>Immédiat</span>
+                        </div>
+                        <div class="response-item">
+                            <span>Devis</span>
+                            <span>&lt; 48h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Mon Portfolio</h3>
+                    <p>Développeur passionné créant des expériences numériques exceptionnelles avec les dernières technologies web.</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <i data-lucide="whatsapp"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#experience">Expérience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>📧 fatimathdiakite@gmail.com</p>
+                    <p>📱 +225 07 97 72 37 92</p>
+                    <p>📍 ABIDJAN, COTE D'IVOIRE</p>
+                    <div class="availability-badge">
+                        <div class="badge-indicator"></div>
+                        Disponible pour nouveaux projets
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <span>© 2025 Fait avec <i data-lucide="heart" class="heart-icon"></i> par VoTRE INGENIEUR FATIMATH</span>
+                </div>
+                <div class="footer-tech">
+                    <span>Développé avec HTML, CSS & JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <button id="scroll-to-top" class="scroll-to-top">
+            <i data-lucide="arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="PROJET3.JS"></script>
+</body>
+</html>
